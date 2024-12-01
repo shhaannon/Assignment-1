@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #EBE9E9; /* Light background color */
+    color: #333; /* General text color */
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #EBE9E9;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    color: #453E33;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Navigation Styling */
+  nav {
+    padding: 15px 0;
+    background-color: #DBD2CD;
+    border-top: solid #EBE9E9;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #453E33;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  /* Hero Section */
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+  
+  #hero img {
+    width: 500px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners to the image */
+  }
+  
+  /* Profile Card Styling */
+  .profile-card {
+    display: flex;
+    gap: 20px; /* Space between image and text */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile Details Section */
+  .profile-details {
+    flex: 1; /* Allow the text to take the remaining space */
+    padding-left: 20px; /* Space between image and text */
+  }
+  
+  .profile-details h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Underline for Key Facts */
+    padding-bottom: 5px;
+  }
+  
+  .profile-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.8; /* Spreads out the lines for readability */
+  }
+  
+  .profile-details p strong {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px; /* Align the labels */
+    text-align: left;
+  }
+  
+  /* Main Content Layout */
+  main {
+    padding: 20px;
+    background-color: #EBE9E9;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-card {
+      flex-direction: column; /* Stack the image and text */
+      padding: 15px;
+    }
+  
+    #hero img {
+      max-width: 100%; /* Make the image responsive */
+      margin: 0 auto;
+    }
+  
+    .profile-details {
+      padding-left: 0;
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  
+    .profile-details p strong {
+      width: auto; /* Let the labels adjust naturally */
+    }
+  }
